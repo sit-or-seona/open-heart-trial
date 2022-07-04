@@ -10,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/background.jpg);
 }
 
 .logo{
@@ -35,19 +36,29 @@ img {
 }
 
 #signin, #signup {
-    width: 196px;
-    height: 40px;
+    width: 197px;
+    height: 43px;
     border: 3px solid gray;
     background-color: white;
     color: #817F7F;
+
     border-radius: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    letter-spacing: 0.04em;
     line-height: 15px;
     cursor: pointer;
+    font-family: 'Luckiest Guy', cursive;
 }
+/* 
+#signin{
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+} */
+
 
 #signin:hover, #signup:hover{
     background-color: black;
