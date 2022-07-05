@@ -113,11 +113,8 @@ img {
     font-family: 'Luckiest Guy', cursive;
     text-align: center;
     align-items: center;
+    cursor: pointer;
 }
 
-#signin:disabled {
-    background-color: #8A8A8D;
-    box-shadow: none;
-    border: none;
-}
+
 

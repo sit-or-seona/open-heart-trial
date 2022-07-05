@@ -3,6 +3,7 @@
 <head>
     <title>Document</title>
     <link href="./styles/signup.css" rel="stylesheet">
+    <script src="./scripts/signup.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -17,18 +18,18 @@
         </div>
         <div class="body">
             <div class="user_info">
-                <input class="id" type="text" placeholder="User Name">
-                <input class="id" type="password" placeholder="Password">
-                <input class="id" type="password" placeholder="Confirm your password">
+                <input class="id" type="text" placeholder="User Name" id="id">
+                <input class="id" type="password" placeholder="Password" id="pw1">
+                <input class="id" type="password" placeholder="Confirm your password" id="pw2">
             </div>
             <div class="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" id="terms">
                 <span id="check1">I agree to the</span>
                 <span id="check2">Terms & Conditions</span>
             </div>
         </div>
         <div class="footer">
-            <button id="signup" onclick="" disabled>create account</button>
+            <button id="signup" onclick="signup()">create account</button>
         </div>
     </div>
 </body>
