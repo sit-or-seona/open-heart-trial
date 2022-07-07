@@ -3,13 +3,16 @@ function signin () {
     const pw = document.getElementById("pw").value;
     
     if(id === ""){
-        alert("이름을 입력해주시겠어요?");
+        alert("이름이 뭐예요~");
         
     } else if(pw === ""){
-        alert("비밀번호를 입력해주시겠어요?");
+        alert("비밀번호 뭐예요~");
         
     } else {
         alert("Welcome back!")
+        pageLanding ();
     }
-
+}
+function pageLanding () {
+    location.href = "landing.html";
 }

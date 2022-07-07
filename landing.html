@@ -3,13 +3,17 @@
 <head>
     <title>Open Heart</title>
     <link href="./styles/landing.css" rel="stylesheet">
+    <script src="./scripts/landing.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="getTime()">
     <div class="outerbox">
         <div class="header">
             <div class="header__phone">
-                <div class="phone__time"></div>
-                <div class="phone__com"></div>
+                <div class="phone__time" id="time" >00:00</div>
+                <div class="phone__com"><img src="./images/phone.png"></div>
             </div>
             <div class="header__logo">
                 <img src="./images/logo-header.png">

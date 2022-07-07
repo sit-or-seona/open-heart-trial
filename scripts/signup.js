@@ -5,19 +5,23 @@ function signup () {
     const terms = document.getElementById("terms").checked;
     
     if(id === ""){
-        alert("이름을 입력해주시겠어요?");
+        alert("이름이 뭐예요~");
         
     } else if(pw1 === ""){
-        alert("비밀번호를 입력해주시겠어요?");
+        alert("비밀번호 뭐예요~");
         
     } else if(pw1 !== pw2){
-        alert("비밀번호가 일치하지 않습니다.")
+        alert("삐삡- 비밀번호가 일치하지 않아요!")
     
     } else if(terms === false){
-        alert("약관에 동의해주세요.")
+        alert("약관에 체크해주세요~")
     
     } else {
-        alert("Welcome to Open 💜!")
+        alert("Welcome to Open-💜!")
+        pageLanding();
     }
+}
 
+function pageLanding () {
+    location.href = "landing.html";
 }
