@@ -43,10 +43,16 @@
     width: 70px;
 }
 
+.header__logo img {
+    width: 117px;
+    height: auto;
+    object-fit: fill;;
+}
+
 iframe {
     border: none;
-    width: 308px;
-    height: 669.5px;
+    width: 100%;
+    height: 663.5px;
 }
 
 .navigation{
@@ -57,20 +63,18 @@ iframe {
 }
 
 .navigation__item {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .navigation__item img{
-    width: 20px;
+    height: 20px;
     margin-top: 14px;
+    cursor: pointer;
 }
 
-
-.header__logo img {
-    width: 117px;
-    height: auto;
-    object-fit: fill;;
-}
