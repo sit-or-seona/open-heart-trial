@@ -120,10 +120,8 @@ html, body {
     line-height: 35px;
 }
 
-#profile__photos, #profile__info, #profile__mention{
-    
-}
-
 iframe {
+    width: 308px;
     height: 439px;
+    border: none;
 }
