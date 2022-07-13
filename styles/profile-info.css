@@ -68,7 +68,7 @@ html, body {
     margin-left: 190px;
 }
 
-#aboutme__p1, #aboutme__p2 {
+p {
     background-color: #EFEFEF;
     font-size: 12px;
     border-radius: 20px;
@@ -83,7 +83,7 @@ html, body {
     color: black;
 }
 
-#aboutme__h1, #aboutme__h2 {
+p::first-line {
     color: #9E00FF;
     font-weight: 700;
 }
