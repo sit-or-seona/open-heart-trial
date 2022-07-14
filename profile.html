@@ -3,9 +3,10 @@
 <head>
     <title>Open Heart - Profile</title>
     <link href="./styles/profile.css" rel="stylesheet">
+    <script src="./scripts/profile.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -26,11 +27,11 @@
         </div>
         <div class="profile__body">
             <div class="navigation">
-                <div id="profile__photos">Photos</div>
-                <div id="profile__info">Info</div>
-                <div id="profile__mention">Mention</div>
+                <div id="profile__photos" onclick="clickPhotos()">Photos</div>
+                <div id="profile__info" onclick="clickInfo()">Info</div>
+                <div id="profile__mention" onclick="clickMention()">Mention</div>
             </div>
-            <iframe src="./profile-mention.html"></iframe>
+            <iframe id="profileFrame" src="./profile-photos.html"></iframe>
         </div>
     </div>
 </body>
