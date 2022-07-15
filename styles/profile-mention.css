@@ -22,14 +22,18 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start
 }
 
 .mention {
-    width: 100%;
+    margin-bottom: 20px;
+}
+
+.mention span {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #profile__img {
@@ -44,12 +48,13 @@ html, body {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.04em;
+    margin-left: 10px;
 }
 
 p {
     background-color: #EFEFEF;
     font-size: 12px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -58,15 +63,21 @@ p {
     letter-spacing: 0.04em;
     padding: 15px;
     color: black;
+    width: 240px;
+    margin-left: 60px;
+    margin-top: -18px;
 }
 
 #mention__edit {
-    width: 15px;
+    width: 11px;
     height: 3px;
     object-fit: fill;
+    margin-left: 150px;
 }
 
 #mention__add {
     width: 29px;
-    margin-left: 275px;
+    position: absolute;
+    bottom: 5px;
+    right: 0px;
 }

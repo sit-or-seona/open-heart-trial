@@ -22,6 +22,7 @@ html, body {
 }
 
 #photo1 {
-    width: 100%;
+    width: 308px;
     object-fit: fill;
+    overflow: scroll;
 }
