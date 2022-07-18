@@ -105,10 +105,10 @@ html, body {
 }
 
 .navigation {
-    width: 100%;
+    width: 280px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -123,6 +123,9 @@ html, body {
 
 #profile__photos {
     color: black;
+    border-bottom: 1px solid #9E00FF;
+    width: 80px;
+    margin-bottom: -2px;
 }
 
 iframe {
