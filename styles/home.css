@@ -30,30 +30,123 @@ html, body {
     align-items: center;
 }
 
-.banner__slide {
+.banner__gradient{
     width: 308px;
-    height: 491px;
-    overflow: hidden;
-    text-align: center;
+    height: 273px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 56.56%, #70E096 100%);
+    position: absolute;
+    top: 230px;
+    z-index: 100;
+    border-radius: 0px 0px 10px 10px;
 }
 
-.banner__slide img {
+.banner__slider {
+    width: 308px;
+    height: 491px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 491px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
     width: 308px;
     height: 491px;
     object-fit: fill;
 }
 
-.banner__gradient{
-    width: 300px;
-    height: 273px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 56.56%, #70E096 100%);
+.slide__manual {
     position: absolute;
-    top: 218px;
-    z-index: 100;
-    border-radius: 0px 0px 10px 10px;
+    width: 308px;
+    margin-top: 470px;
+    display: flex;
+    justify-content: center;
 }
 
-.banner__btn img{
+.manual__btn {
+    background-color: grey;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 300;
+}
+
+.manual__btn:not(:last-child) {
+    margin-right: 7px;
+}
+
+.manual__btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.slide__auto {
+    position: absolute;
+    width: 308px;
+    margin-top: 470px;
+    display: flex;
+    justify-content: center;
+}
+
+.slide__auto div{
+    background-color: grey;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 300;
+}
+
+.slide__auto div:not(:last-child) {
+    margin-right: 7px;
+}
+
+#radio1:checked ~ .slide__auto .auto__btn1 {
+    background-color: white;
+}
+
+#radio2:checked ~ .slide__auto .auto__btn2 {
+    background-color: white;
+}
+
+#radio3:checked ~ .slide__auto .auto__btn3 {
+    background-color: white;
+}
+
+#radio4:checked ~ .slide__auto .auto__btn4 {
+    background-color: white;
+}
+
+.banner__mark img{
     width: 61px;
     height: 57px;
     background-color: rgba(217, 217, 217, 0.7);
@@ -67,21 +160,21 @@ html, body {
     border-radius: 0px 0px 10px 10px;
     padding: 12px 10px;
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 162px;
 }
 
 #banner__dislike {
     position: absolute;
     top: 190px;
-    left: 36px;
+    left: 33px;
 }
 
 #banner__like {
     transform: scaleX(-1);
     position: absolute;
     top: 190px;
-    right: 36px;
+    right: 33px;
 }
 
 .profile__info{
@@ -92,7 +185,7 @@ html, body {
     align-items: flex-start;
     position: absolute;
     left: 40px;
-    top: 380px;
+    top: 390px;
     z-index: 200;
 }
 
@@ -145,21 +238,8 @@ html, body {
     width: 30px;
     position: absolute;
     top: 8px;
-    right: 25px;
+    right: 20px;
 }
-/* 
-.banner__slide__idx {
-    width: 40px;
-    position: absolute;
-    bottom: 0px;
-    z-index: 500;
-}
-
-#slide__idx1 {
-    width: 8px;
-    height: 8px;
-    color: white;
-} */
 
 .info {
     width: 308px;

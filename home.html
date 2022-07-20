@@ -3,6 +3,7 @@
 <head>
     <title>Open Heart - Home</title>
     <link href="./styles/home.css" rel="stylesheet">
+    <script src="./scripts/home.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Luckiest+Guy&display=swap" rel="stylesheet">
@@ -11,13 +12,33 @@
     <div class="wrapper">
         <div class="banner">
             <div class="banner__gradient"></div>
-            <div class="banner__slide">
-                <img id="slide1" src="./images/coconut.png">
-                <img id="slide2" src="./images/coconut2.png">
-                <img id="slide3" src="./images/coconut3.png">
-                <img id="slide4" src="./images/coconut4.png">
+            <!-- 슬라이드 배너 start -->
+            <div class="banner__slider">
+                <div class="slides">
+                    <input type="radio" name="radio__btn" id="radio1">
+                    <input type="radio" name="radio__btn" id="radio2">
+                    <input type="radio" name="radio__btn" id="radio3">
+                    <input type="radio" name="radio__btn" id="radio4">
+                    <img class="slide first" id="slide1" src="./images/coconut.png">
+                    <img class="slide" id="slide2" src="./images/coconut2.png">
+                    <img class="slide" id="slide3" src="./images/coconut3.png">
+                    <img class="slide" id="slide4" src="./images/coconut4.png">
+                </div>
+                <div class="slide__auto">
+                    <div class="auto__btn1"></div>
+                    <div class="auto__btn2"></div>
+                    <div class="auto__btn3"></div>
+                    <div class="auto__btn4"></div>
+                </div>
             </div>
-            <div class="banner__btn">
+            <div class="slide__manual">
+                <label for="radio1" class="manual__btn"></label>
+                <label for="radio2" class="manual__btn"></label>
+                <label for="radio3" class="manual__btn"></label>
+                <label for="radio4" class="manual__btn"></label>
+            </div>
+            <!-- 슬라이드 배너 end -->
+            <div class="banner__mark">
                 <img id="banner__crown" src="./images/home-crown.png">
                 <img id="banner__dislike" src="./images/home-x.png">
                 <img id="banner__like" src="./images/home-like.png">
@@ -33,12 +54,6 @@
                     <span>From Korea</span>
                 </div>
                 <img id="banner__i" src="./images/i.png">
-            </div>
-            <div class="banner__slide__idx">
-                <span id="slide__idx1"></span>
-                <span id="slide__idx2"></span>
-                <span id="slide__idx3"></span>
-                <span id="slide__idx4"></span>
             </div>
         </div>
         <div class="info">
