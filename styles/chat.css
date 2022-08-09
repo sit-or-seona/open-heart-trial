@@ -40,6 +40,7 @@ html, body {
 .chat__profile{
     object-fit: fill;
     height: 70px;
+    cursor: pointer;
 }
 
 .chat__message{
@@ -62,6 +63,7 @@ html, body {
     letter-spacing: 0.04em;
     color: grey;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .std {
@@ -80,4 +82,5 @@ html, body {
     color: #6d6c6c;
     margin-left: 15px;
     margin-top: 3px;
+    cursor: pointer;
 }
